@@ -1,0 +1,20 @@
+{
+  "name": "varnish_gb_color",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "typescript": "4.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  }
+}

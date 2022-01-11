@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Minimal template</title>
+  </head>
+  <style type="text/css">
+  .gameboy-color {
+    height: 504.5px;
+    width: 295px; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 30px 30px;
+  }
+  .screen-outer {
+    background-color: #333;
+    border: 1px solid #111;
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px 5px 10px 10px;
+  }
+  .screen-lcd {
+    width: 160px;
+    height: 144px;
+    background-color: #bfc4ae;
+    box-shadow: inset 0 0 5px #000;
+  }
+  .screen-inner {
+    padding: 5px;
+    display: inline-flex;
+    background-color: #111;
+    margin: 20px 50px;
+    border-radius: 2px;
+  }
+  .red {
+    background-color: red;
+  }
+  </style>
+  <body>
+    <main>
+      <div class="gameboy-color red">
+        <div class="screen-outer">
+          <div class="screen-inner">
+            <img class="screen-lcd" id="lcd" />
+          </div>
+        </div>
+      </div>
+    </main>
+    keyboard:
+    <ul>
+      <li>left</li>
+      <li>right</li>
+      <li>up</li>
+      <li>down</li>
+      <li>z = A</li>
+      <li>x = B</li>
+    </ul>
+  </body>
+  <script type="module" src="src/index.js"></script>
+</html>
