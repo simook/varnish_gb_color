@@ -54,9 +54,11 @@ const requestHandler = (request, response) => {
     return;
   }
   
-  re = RegExp(/\/x.?/gm);
-  if (request.url === '/x' || re.exec(request.url) != null) {
-    http.get('http://sandbox.varnish-software.com:8080/x', (res) => {
+  re = RegExp(/\/x\/png.?/gm);
+  if (request.url === '/x/png' || re.exec(request.url) != null) {
+    const url = `http://89.162.68.187:8080${request.url}`
+    console.log(url);
+    http.get(url, (res) => {
       let body = [];
       res.on('data', (chunk) => {
         body.push(chunk);
